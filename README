@@ -1,0 +1,25 @@
+This is the first release, version 1.3.  12/21/99.
+
+INSTALLATION INSTRUCTIONS:
+
+configure
+make install
+
+
+NEEDED SOFTWARE:
+You need to have 'monitorps' installed and running before you can
+run 'monitor_products'.  'monitorps' keeps images from the production
+system GVS.  Images are sent to 'monitorps' by 'send_product', included
+in the 'monitorps' distribution.  You need scripts that are modified
+to used 'send_product'.  Currently, gvs_utils has such scripts: see
+singlevos_2A-53-d.aiw, and singlevos_2A-53-w_aiw.
+
+
+NOTES:
+A typical example of converting a 400x400 gif image, representing a 
+1C-51 product, either 1c or qc data, is:
+
+ giftoppm dz_950802_2018_00.gif | pnmscale -xysize 151 151 | ppmquant 256 | ppmtoxpm > d.xpm
+
+This creates a 151x151 xpm image which should match the csmap sizes.
+

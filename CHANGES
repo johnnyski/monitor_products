@@ -1,0 +1,17 @@
+CHANGES for monitor_products
+-----------------------------
+
+v1.3 12/21/99
+----------------
+1. Uses configure.
+
+v1.1 
+----------------
+1. Changed Makefile so can be compiled on the HP by GVBOX and can
+   use either xforms v0.81 or v0.86.
+2. Requires Xpm library if using xforms v0.86.
+
+
+v1.0 (1/13/97)
+----------------
+Initial release.
